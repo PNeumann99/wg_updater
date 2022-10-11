@@ -59,17 +59,4 @@ async function update_offer(interval) {
   }
 }
 
-var dialog = require("dialog-node");
-
-var callback = function (code, retVal, err) {
-  let intervall = Number(retVal) * 60000 || config.offer.interval;
-  update_offer(intervall);
-};
-
-dialog.entry(
-  "How often shall your ad be updated? (in minutes)\nDefault: " +
-    config.offer.interval / 60000,
-  "Enter update interval",
-  0,
-  callback
-);
+update_offer(config.offer.interval);
