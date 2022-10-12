@@ -26,3 +26,9 @@ Do be warned though, that after a Chrome update your chromedriver might be out o
 
 Make a copy of **config-sample.js** and rename it to **config.js**.
 Now fill in your login information, the offer-ID of the WG-Gesucht.de listing you want to keep updated and how often you want the offer to be updated (in minutes).
+
+## running the script
+
+```
+node wg_updater.js
+```
