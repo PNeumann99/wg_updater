@@ -1,11 +1,11 @@
 config = {
   login: {
-    username: "corpsborussia@web.de",
-    password: "Export1836!",
+    username: "your@email.com", // Your email address
+    password: "yourpassword", // Your password
   },
   offer: {
-    id: "1759740",
-    interval: 1800000,
+    id: "1234567", // Your offer ID
+    interval: 30, // Update interval in minutes
   },
 };
 

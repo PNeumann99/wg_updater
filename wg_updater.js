@@ -59,4 +59,4 @@ async function update_offer(interval) {
   }
 }
 
-update_offer(config.offer.interval);
+update_offer(config.offer.interval * 60000);
