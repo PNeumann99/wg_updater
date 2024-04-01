@@ -7,9 +7,12 @@ const screen = {
 };
 
 async function update_offer(interval) {
+  let options = new chrome.Options();
+  options.addArguments("--headless=new");
+  options.addArguments("--window-size=640,480");
   let driver = new Builder()
     .forBrowser("chrome")
-    .setChromeOptions(new chrome.Options().headless().windowSize(screen))
+    .setChromeOptions(options)
     .build();
 
   await driver.get("http://www.wg-gesucht.de");
